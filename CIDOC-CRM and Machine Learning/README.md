@@ -5,7 +5,7 @@ This repository contains the approaches  that exploit machine-learning technique
 ## List of datasets
 
 | Work  | Category | Subcategory | Domain  | Data used |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | <a href="#ref-1">[1]</a>, <a href="#ref-2">[2]</a> | over texts | NER | Archaeology  | 30 large reports |
 | <a href="#ref-3">[3]</a> | over texts | NER and relation extraction | Cultural heritage data of China | ~ 1,500 entities |
 | <a href="#ref-4">[4]</a> | over texts | Information Extraction and Classification | Narratives  | ~ 600 events |
