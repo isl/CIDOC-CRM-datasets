@@ -7,6 +7,5 @@ This repository contains the Available Datasets expressed through CIDOC-CRM Mode
 
 | ID  | Dataset | Link | Domain | Triples |SPARQL Endpoint/ API | Data Dump |
 |---|---|---|---|---|---|---|
-| 1 | Archaeology Data Service| http://data.archaeologydataservice.ac.uk | Heritage Data of
-United Kingdom | 1,559,912 | ✓ | |
+| 1 | Archaeology Data Service| http://data.archaeologydataservice.ac.uk | Heritage Data of United Kingdom | 1,559,912 | ✓ | |
 
