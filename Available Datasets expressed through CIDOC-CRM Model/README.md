@@ -19,8 +19,9 @@ This repository contains the Available Datasets expressed through CIDOC-CRM Mode
 10|Nomisma.org|https://nomisma.org/|Numismatic concepts |9,933,870|✓|✓
 11|OEBL|https://zenodo.org/record/3873203|Austrian Biographical Dictionary|~600,000||✓
 12| OpenArchaeo |http://openarchaeo.huma-num.fr/explorateur/home|Platform for archaeological data|1,548,827|✓|
-13|RePIM |https://zenodo.org/record/5692109|Italian Music, 1500-1700|4,427,647||✓
-14| SeaLiT Knowledge Graphs | https://zenodo.org/record/6460841 | Maritime History, 1850s-1920s | ~18,500,000 | | ✓
-15|Smithsonian Museum|https://triplydb.com/smithsonian/-/overview|Smithsonian American Art Museum|2,802,768|✓|✓
-16| WarSampoo  |https://seco.cs.aalto.fi/projects/sotasampo/en/|Finnish World War II|14,322,426|✓|✓
-17| WW1LOD  |https://www.ldf.fi/dataset/ww1lod/|Finnish World War I|47,616|✓|✓
+13| Persons and Names of the Middle Kingdom|https://pnm.uni-mainz.de/ | Egyptian Middle Kingdom Persons and Names|1,490,284|✓|
+14|RePIM |https://zenodo.org/record/5692109|Italian Music, 1500-1700|4,427,647||✓
+15| SeaLiT Knowledge Graphs | https://zenodo.org/record/6460841 | Maritime History, 1850s-1920s | ~18,500,000 | | ✓
+16|Smithsonian Museum|https://triplydb.com/smithsonian/-/overview|Smithsonian American Art Museum|2,802,768|✓|✓
+17| WarSampoo  |https://seco.cs.aalto.fi/projects/sotasampo/en/|Finnish World War II|14,322,426|✓|✓
+18| WW1LOD  |https://www.ldf.fi/dataset/ww1lod/|Finnish World War I|47,616|✓|✓
