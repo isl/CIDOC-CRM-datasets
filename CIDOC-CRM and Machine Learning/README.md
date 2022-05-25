@@ -39,18 +39,18 @@ This repository contains the approaches  that exploit machine-learning technique
     [6]: Dahroug, A.; Vlachidis, A.; Liapis, A.; Bikakis, A.; Lopez-Nores, M.; Sacco, O.; Pazos-Arias, J.J. Using dates as contextual information for personalised ultural heritage experiences. Journal of Information Science 2021, 47, 82–100.
   </li>
   <li id="ref-7">
-    [6]: El-Hajj, H.; Valleriani, M. CIDOC2VEC: Extracting Information from Atomized CIDOC-CRM Humanities Knowledge Graphs. Information 2021, 12, 503.
+    [7]: El-Hajj, H.; Valleriani, M. CIDOC2VEC: Extracting Information from Atomized CIDOC-CRM Humanities Knowledge Graphs. Information 2021, 12, 503.
   </li>
   <li id="ref-8">
-    [7]: Melo, D.; Rodrigues, I.P.; Varagnolo, D. A strategy for archives metadata representation on CIDOC-CRM and knowledge discovery. Semantic Web 2021, pp. 1–32.
+    [8]: Melo, D.; Rodrigues, I.P.; Varagnolo, D. A strategy for archives metadata representation on CIDOC-CRM and knowledge discovery. Semantic Web 2021, pp. 1–32.
   </li>
   <li id="ref-9">
-    [8]: Schleider, T.; Troncy, R.; Gaitán, M.; Sebastian, J.; Mladenic, D.; Kastelic, A.; Besher Massri, M.; Leon, A.; Puren, M.; Vernus, P.; et al. The SILKNOW Knowledge Graph. Semant. Web 2021, pp. 1–16.
+    [9]: Schleider, T.; Troncy, R.; Gaitán, M.; Sebastian, J.; Mladenic, D.; Kastelic, A.; Besher Massri, M.; Leon, A.; Puren, M.; Vernus, P.; et al. The SILKNOW Knowledge Graph. Semant. Web 2021, pp. 1–16.
   </li>
   <li id="ref-10">
-    [9]: Suissa, O.; Zhitomirsky-Geffet, M.; Elmalech, A. Question answering with deep neural networks for semi-structured heterogeneous genealogical knowledge graphs. Semantic Web, pp. 1–29.
+    [10]: Suissa, O.; Zhitomirsky-Geffet, M.; Elmalech, A. Question answering with deep neural networks for semi-structured heterogeneous genealogical knowledge graphs. Semantic Web, pp. 1–29.
   </li>
   <li id="ref-11">
-    [10]: Zreik, A.; Kedad, Z. Matching and analysing conservation–restoration trajectories. Data & Knowledge Engineering 2022, 139, 102015.
+    [11]: Zreik, A.; Kedad, Z. Matching and analysing conservation–restoration trajectories. Data & Knowledge Engineering 2022, 139, 102015.
   </li>
 </ul>
