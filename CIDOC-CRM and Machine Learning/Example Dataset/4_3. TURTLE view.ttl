@@ -1,0 +1,48 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix pref:  <http://www.cidoc-crm.org/examples/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <https://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://www.cidoc-crm.org/examples/visual_item/E98F243A-B982-4142-83AE-88FE0BD058CE>
+        a                        crm:E36_Visual_Item ;
+        rdfs:label               "Digital representation of painting Self-Portrait as a Painter" ;
+        crm:P1_is_identified_by  <http://www.cidoc-crm.org/examples/identifier/img1.png> .
+
+<http://www.cidoc-crm.org/examples/identifier/img1.png>
+        a           crm:E42_Identifier ;
+        rdfs:label  "img1.png" .
+
+dbpedia:Vincent_van_Gogh
+        a           crm:E21_Person ;
+        rdfs:label  "Vincent van Gogh" .
+
+<http://www.cidoc-crm.org/examples/panting/F16671D1-7D69-354E-91E8-CDAD152A77B0>
+        a                             crm:E22_Human-Made_Object ;
+        rdfs:label                    "Painting Self-Portrait as a Painter" ;
+        crm:P102_has_title            <http://www.cidoc-crm.org/examples/title/F16671D1-7D69-354E-91E8-CDAD152A77B0> ;
+        crm:P108i_was_produced_by     <http://www.cidoc-crm.org/examples/production/748525A0-2E27-4274-A1DE-71F29ECB56DE> ;
+        crm:P138i_has_representation  <http://www.cidoc-crm.org/examples/visual_item/E98F243A-B982-4142-83AE-88FE0BD058CE> ;
+        crm:P2_has_type               <http://www.cidoc-crm.org/examples/object_type/painting> .
+
+<http://www.cidoc-crm.org/examples/object_type/painting>
+        a           crm:E55_Type ;
+        rdfs:label  "Painting" .
+
+<http://www.cidoc-crm.org/examples/title/F16671D1-7D69-354E-91E8-CDAD152A77B0>
+        a           crm:E35_Title ;
+        rdfs:label  "Self-Portrait as a Painter" .
+
+<http://www.cidoc-crm.org/examples/timespan/F61F62D8-A608-4B8F-AE02-F0607FBA2D93>
+        a                            crm:E52_Time-Span ;
+        crm:P82_at_some_time_within  "1888" .
+
+<http://www.cidoc-crm.org/examples/production/748525A0-2E27-4274-A1DE-71F29ECB56DE>
+        a                       crm:E12_Production ;
+        rdfs:label              "Creation of painting Self-Portrait as a Painter" ;
+        crm:P14_carried_out_by  dbpedia:Vincent_van_Gogh ;
+        crm:P4_has_time-span    <http://www.cidoc-crm.org/examples/timespan/F61F62D8-A608-4B8F-AE02-F0607FBA2D93> .

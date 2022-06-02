@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generator_policy>
+	<generator name="LocalTermURI" prefix="pref">
+		<pattern>{hierarchy}/{term}</pattern>
+	</generator>
+	<generator name="LocalTermURI-hashed" prefix="pref" shorten="yes">
+		<pattern>{hierarchy}/{term}</pattern>
+	</generator>
+	<generator name="LocalTermUri-UUID" prefix="pref" uuid="yes">
+		<pattern>{hierarchy}/</pattern>
+	</generator>
+	<generator name="dbPediaUri" prefix="dbpedia">
+		<pattern>{resource}</pattern>
+	</generator>
+	
+	<generator name="SimpleLabel">
+		<pattern>{label}</pattern>
+	</generator>
+	<generator name="CompositeLabel">
+		<pattern>{label_part1} {label_part2}</pattern>
+	</generator>
+</generator_policy>

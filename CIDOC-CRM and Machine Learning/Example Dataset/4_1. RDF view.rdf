@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia="https://dbpedia.org/resource/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:pref="http://www.cidoc-crm.org/examples/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <crm:E22_Human-Made_Object rdf:about="http://www.cidoc-crm.org/examples/panting/F16671D1-7D69-354E-91E8-CDAD152A77B0">
+    <crm:P138i_has_representation>
+      <crm:E36_Visual_Item rdf:about="http://www.cidoc-crm.org/examples/visual_item/CC28D280-6BB9-4B85-86E7-2F945001FA87">
+        <crm:P1_is_identified_by>
+          <crm:E42_Identifier rdf:about="http://www.cidoc-crm.org/examples/identifier/img1.png">
+            <rdfs:label>img1.png</rdfs:label>
+          </crm:E42_Identifier>
+        </crm:P1_is_identified_by>
+        <rdfs:label>Digital representation of painting Self-Portrait as a Painter</rdfs:label>
+      </crm:E36_Visual_Item>
+    </crm:P138i_has_representation>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="http://www.cidoc-crm.org/examples/production/5322C8B2-EA87-40E0-8DA1-8073416ED24E">
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:about="http://www.cidoc-crm.org/examples/timespan/AD54DB4C-C0BC-4B63-9AC2-C707C88887E6">
+            <crm:P82_at_some_time_within>1888</crm:P82_at_some_time_within>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P14_carried_out_by>
+          <crm:E21_Person rdf:about="https://dbpedia.org/resource/Vincent_van_Gogh">
+            <rdfs:label>Vincent van Gogh</rdfs:label>
+          </crm:E21_Person>
+        </crm:P14_carried_out_by>
+        <rdfs:label>Creation of painting Self-Portrait as a Painter</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P102_has_title>
+      <crm:E35_Title rdf:about="http://www.cidoc-crm.org/examples/title/F16671D1-7D69-354E-91E8-CDAD152A77B0">
+        <rdfs:label>Self-Portrait as a Painter</rdfs:label>
+      </crm:E35_Title>
+    </crm:P102_has_title>
+    <crm:P2_has_type>
+      <crm:E55_Type rdf:about="http://www.cidoc-crm.org/examples/object_type/painting">
+        <rdfs:label>Painting</rdfs:label>
+      </crm:E55_Type>
+    </crm:P2_has_type>
+    <rdfs:label>Painting Self-Portrait as a Painter</rdfs:label>
+  </crm:E22_Human-Made_Object>
+</rdf:RDF>

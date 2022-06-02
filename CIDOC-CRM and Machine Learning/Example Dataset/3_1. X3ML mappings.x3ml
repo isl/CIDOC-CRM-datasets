@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      source_type="xpath"
+      version="1.0"
+      xsi:noNamespaceSchemaLocation="https://isl.ics.forth.gr/x3ml/schema/x3ml.xsd">
+   <info>
+      <title>Vincent Van Gogh painting</title>
+      <general_description/>
+      <source>
+         <source_info>
+            <source_schema schema_file="2. XML view.xml" type="xml" version="">2. XML view</source_schema>
+            <namespaces>
+               <namespace prefix="" uri=""/>
+            </namespaces>
+         </source_info>
+      </source>
+      <target>
+         <target_info>
+            <target_schema schema_file="CIDOC_CRM_v7.1.1.rdfs" type="rdfs" version="">CIDOC_CRM_v7.1.1</target_schema>
+            <namespaces>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/>
+            </namespaces>
+         </target_info>
+      </target>
+      <mapping_info>
+         <mapping_created_by_org/>
+         <mapping_created_by_person/>
+         <in_collaboration_with/>
+      </mapping_info>
+      <example_data_info>
+         <example_data_from/>
+         <example_data_contact_person/>
+         <example_data_source_record/>
+         <generator_policy_info/>
+         <example_data_target_record/>
+         <thesaurus_info/>
+      </example_data_info>
+   </info>
+   <namespaces>
+      <namespace prefix="pref" uri="http://www.cidoc-crm.org/examples/"/>
+      <namespace prefix="dbpedia" uri="https://dbpedia.org/resource/"/>
+   </namespaces>
+   <mappings>
+      <mapping>
+         <domain>
+            <source_node>/root/painting</source_node>
+            <target_node>
+               <entity>
+                  <type>crm:E22_Human-Made_Object</type>
+                  <instance_generator name="LocalTermURI-hashed">
+                     <arg name="hierarchy" type="constant">panting</arg>
+                     <arg name="term" type="xpath">title/text()</arg>
+                  </instance_generator>
+                  <label_generator name="CompositeLabel">
+                     <arg name="label_part1" type="constant">Painting</arg>
+                     <arg name="label_part2" type="xpath">title/text()</arg>
+                  </label_generator>
+                  <additional>
+                     <relationship>crm:P2_has_type</relationship>
+                     <entity>
+                        <type>crm:E55_Type</type>
+                        <instance_generator name="LocalTermURI">
+                           <arg name="hierarchy" type="constant">object_type</arg>
+                           <arg name="term" type="constant">painting</arg>
+                        </instance_generator>
+                        <label_generator name="SimpleLabel">
+                           <arg name="label" type="constant">Painting</arg>
+                        </label_generator>
+                     </entity>
+                  </additional>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>title</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P102_has_title</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>title</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E35_Title</type>
+                     <instance_generator name="LocalTermURI-hashed">
+                        <arg name="hierarchy" type="constant">title</arg>
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="SimpleLabel">
+                        <arg name="label" type="xpath">text()</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>creator</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P108i_was_produced_by</relationship>
+                  <entity variable="production_event">
+                     <type>crm:E12_Production</type>
+                     <instance_generator name="LocalTermUri-UUID">
+                        <arg name="hierarchy" type="constant">production</arg>
+                     </instance_generator>
+                     <label_generator name="CompositeLabel">
+                        <arg name="label_part1" type="constant">Creation of painting</arg>
+                        <arg name="label_part2" type="xpath">../title/text()</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>crm:P14_carried_out_by</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>creator</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E21_Person</type>
+                     <instance_generator name="dbPediaUri">
+                        <arg name="resource" type="xpath">translate(text(),' ','_')</arg>
+                     </instance_generator>
+                     <label_generator name="SimpleLabel">
+                        <arg name="label" type="xpath">text()</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>creation_date</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P108i_was_produced_by</relationship>
+                  <entity variable="production_event">
+                     <type>crm:E12_Production</type>
+                     <instance_generator name="LocalTermUri-UUID">
+                        <arg name="hierarchy" type="constant">production</arg>
+                     </instance_generator>
+                     <label_generator name="CompositeLabel">
+                        <arg name="label_part1" type="constant">Creation of painting</arg>
+                        <arg name="label_part2" type="xpath">../title/text()</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>crm:P4_has_time-span</relationship>
+                  <entity>
+                     <type>crm:E52_Time-Span</type>
+                     <instance_generator name="LocalTermUri-UUID">
+                        <arg name="hierarchy" type="constant">timespan</arg>
+                     </instance_generator>
+                  </entity>
+                  <relationship>crm:P82_at_some_time_within</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>creation_date</source_node>
+               <target_node>
+                  <entity>
+                     <type>rdfs:Literal</type>
+                     <instance_generator name="SimpleLabel">
+                        <arg name="label" type="xpath">text()</arg>
+                     </instance_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>filename</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P138i_has_representation</relationship>
+                  <entity>
+                     <type>crm:E36_Visual_Item</type>
+                     <instance_generator name="LocalTermUri-UUID">
+                        <arg name="hierarchy" type="constant">visual_item</arg>
+                     </instance_generator>
+                     <label_generator name="CompositeLabel">
+                        <arg name="label_part1" type="constant">Digital representation of painting</arg>
+                        <arg name="label_part2" type="xpath">../title/text()</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>crm:P1_is_identified_by</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>filename</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E42_Identifier</type>
+                     <instance_generator name="LocalTermURI">
+                        <arg name="hierarchy" type="constant">identifier</arg>
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="SimpleLabel">
+                        <arg name="label" type="xpath">text()</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+   </mappings>
+</x3ml>
